@@ -2,7 +2,7 @@
 
 UI for shop owners to manage their product catalogue.​
 
-For intern with [Raisebe](www.raisebe.com)
+For intern with [Raisebe](https://www.raisebe.com/)
 
 packages used `firebase_core: ^1.17.1` 
 and  `cloud_firestore: ^3.1.17`
