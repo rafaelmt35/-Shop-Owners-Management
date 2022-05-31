@@ -1,18 +1,26 @@
-# product_catalogue
+# Shop Owners Management
 
-A new Flutter project.
+UI for shop owners to manage their product catalogue.​
 
-## Getting Started
+For intern with [Raisebe](www.raisebe.com)
 
-- [Firebase Database](https://console.firebase.google.com/project/shop-owners-management/firestore/data/~2Fproducts~2Fd3M763pwnXV9y21LHqJC)
+packages used `firebase_core: ^1.17.1` 
+and  `cloud_firestore: ^3.1.17`
 
-This project is a starting point for a Flutter application.
+Link to [Product Database](https://console.firebase.google.com/project/shop-owners-management/firestore/data/~2Fproducts~2Fd3M763pwnXV9y21LHqJC)
 
-A few resources to get you started if this is your first Flutter project:
+## Goals
+-Create a user interface of 2-3 pages for shop owners to manage their product catalogue.​
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+-show your color choices and creativity​
+## Description
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Flutter UI for shop owners to managed their products catalouge, Shop Owners can add their new product, update, and delete.
+
+I'm using Cloud Firestore to store the products data (test database, only for 30 days).
+
+
+### Documentation
+
+
+#### Rafael Matthew Tanumihardja
