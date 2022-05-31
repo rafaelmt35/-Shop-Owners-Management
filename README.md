@@ -17,7 +17,7 @@ Link to [Product Database](https://console.firebase.google.com/project/shop-owne
 
 Flutter UI for shop owners to managed their products catalouge, Shop Owners can add their new product, update, and delete (CRUD).
 
-I'm using Cloud Firestore to store the products data (test database, only for 30 days).
+I'm using Cloud Firestore from Firebase to store the products data (test database, only for 30 days).
 
 
 ### Documentation
