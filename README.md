@@ -15,12 +15,22 @@ Link to [Product Database](https://console.firebase.google.com/project/shop-owne
 - show your color choices and creativity​
 ## Description
 
-Flutter UI for shop owners to managed their products catalouge, Shop Owners can add their new product, update, and delete (CRUD).
-
+Flutter UI for shop owners to managed their products catalouge, Shop Owners can add their new product, update, and delete (CRUD).<br>
 I'm using Cloud Firestore from Firebase to store the products data (test database, only for 30 days).
 
 
-### Documentation
+## Documentation :
+ 1. Home Page
 
+    Consist of Today's Update for track our progress, statistics for past 7 days, and news for sellers.
+
+    <img src="https://user-images.githubusercontent.com/99629720/171095991-e2fc5734-c7e9-4944-abf8-852d62bf8a17.png" width="200" height="400">
+ 
+ 2. Products Page
+    
+    A listview for showing the seller's products(product's name, price, stocks left, seen, sold).<br>
+    Seller can update and delete their products with button.
+
+    <img src="https://user-images.githubusercontent.com/99629720/171096009-153ecdf2-faef-4142-b463-6c07cd6ab449.png" width="200" height="400">
 
 #### Rafael Matthew Tanumihardja
