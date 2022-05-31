@@ -7,7 +7,11 @@ For intern with [Raisebe](https://www.raisebe.com/)
 packages used `firebase_core: ^1.17.1` 
 and  `cloud_firestore: ^3.1.17`
 
-Link to [Product Database](https://console.firebase.google.com/project/shop-owners-management/firestore/data/~2Fproducts~2Fd3M763pwnXV9y21LHqJC)
+Link to [Database](https://console.firebase.google.com/project/shop-owners-management/firestore/data/~2Fproducts~2Fd3M763pwnXV9y21LHqJC)
+
+**Fonts**
+
+-  [Inter](https://fonts.google.com/specimen/Inter)
 
 ## Goals
 - Create a user interface of 2-3 pages for shop owners to manage their product catalogue.​
