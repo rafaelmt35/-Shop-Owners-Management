@@ -274,7 +274,8 @@ class _HomePageState extends State<HomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(left: 12.0,bottom: 5),
+                              padding:
+                                  const EdgeInsets.only(left: 12.0, bottom: 5),
                               child: Text(
                                 'Statistics',
                                 style: TextStyle(
@@ -325,7 +326,7 @@ class _HomePageState extends State<HomePage> {
                                       'Show more',
                                       style: TextStyle(
                                           fontFamily: 'Inter',
-                                          fontSize: 17,
+                                          fontSize: 13,
                                           fontWeight: FontWeight.w500),
                                     ),
                                     SizedBox(
@@ -415,6 +416,7 @@ class _HomePageState extends State<HomePage> {
       child: Column(
         children: [
           Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
@@ -460,8 +462,8 @@ class _HomePageState extends State<HomePage> {
                   'Read more',
                   style: TextStyle(
                       fontFamily: 'Inter',
-                      fontSize: 15,
-                      fontWeight: FontWeight.w800),
+                      fontSize: 12,
+                      fontWeight: FontWeight.w500),
                 ),
                 SizedBox(
                   width: 5,

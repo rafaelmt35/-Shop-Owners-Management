@@ -57,7 +57,7 @@ class _MyProductsState extends State<MyProducts> {
           child: Column(
             children: [
               Container(
-                padding: EdgeInsets.only(top: 10),
+                padding: EdgeInsets.only(top: 17),
                 height: 80,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -99,25 +99,22 @@ class _MyProductsState extends State<MyProducts> {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8.0),
-                child: Container(
-                  margin: EdgeInsets.only(top: 10),
-                  width: 370.0,
-                  height: 50.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.white,
-                  ),
-                  child: const TextField(
-                    decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.search),
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(10))),
-                      hintText: 'Search your products',
-                      hintStyle: TextStyle(fontStyle: FontStyle.italic),
-                      fillColor: Colors.white,
-                    ),
+              Container(
+                margin: EdgeInsets.only(top: 8),
+                width: 370.0,
+                height: 50.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.white,
+                ),
+                child: const TextField(
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.search),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                    hintText: 'Search your products',
+                    hintStyle: TextStyle(fontStyle: FontStyle.italic),
+                    fillColor: Colors.white,
                   ),
                 ),
               ),
@@ -137,7 +134,6 @@ class _MyProductsState extends State<MyProducts> {
                                       (e.data() as dynamic)['Price'].toString(),
                                       (e.data() as dynamic)['Stocks']
                                           .toString(),
-                                      (e.data() as dynamic)['Sold'].toString(),
                                       deleteItem: () {
                                         final docUser = FirebaseFirestore
                                             .instance
@@ -147,8 +143,8 @@ class _MyProductsState extends State<MyProducts> {
                                       },
                                       updateItem: () {
                                         products.doc(e.id).update({
-                                          'Sold':
-                                              (e.data() as dynamic)['Sold'] - 1
+                                          'Stocks':
+                                              (e.data() as dynamic)['Stocks'] + 1
                                         });
                                       },
                                     ))
@@ -167,8 +163,6 @@ class _MyProductsState extends State<MyProducts> {
       bottomNavigationBar: BuildNavbar(context),
     );
   }
-
-
 
   //BUILD NAV BAR
   Container BuildNavbar(BuildContext context) {

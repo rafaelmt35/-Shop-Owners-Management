@@ -5,13 +5,13 @@ class ProductBox extends StatelessWidget {
   final String imagename;
   final String rangeprice;
   final String stockleft;
-  final String sold;
+  
 
   final Function updateItem;
   final Function deleteItem;
 
   ProductBox(
-      this.desc, this.imagename, this.rangeprice, this.stockleft, this.sold,
+      this.desc, this.imagename, this.rangeprice, this.stockleft, 
       {required this.deleteItem, required this.updateItem});
 
   @override
@@ -19,8 +19,8 @@ class ProductBox extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        height: 146,
-        width: 365,
+        height: 135,
+        width: 366,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),
@@ -38,11 +38,12 @@ class ProductBox extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  margin: EdgeInsets.only(left: 6, top: 7, bottom: 6),
-                  width: 112,
-                  height: 129,
+                  margin: EdgeInsets.only(left: 6, top: 10),
+                  width: 113,
+                  height: 113,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: DecorationImage(
@@ -57,34 +58,37 @@ class ProductBox extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            desc,
-                            style: TextStyle(
-                                fontFamily: 'Inter',
-                                fontSize: 15,
-                                fontWeight: FontWeight.w700),
-                          ),
-                          PopupMenuButton(
-                            color: Colors.white,
-                            itemBuilder: (context) => [
-                              PopupMenuItem(
-                                child: Text("Preview Product"),
-                                value: 1,
-                              ),
-                              PopupMenuItem(
-                                child: Text("Reminder"),
-                                value: 2,
-                              ),
-                              PopupMenuItem(
-                                child: Text("Share"),
-                                value: 3,
-                              )
-                            ],
-                          )
-                        ],
+                      Container(
+                        height: 30,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              desc,
+                              style: TextStyle(
+                                  fontFamily: 'Inter',
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w700),
+                            ),
+                            PopupMenuButton(
+                              color: Colors.white,
+                              itemBuilder: (context) => [
+                                PopupMenuItem(
+                                  child: Text("Preview Product"),
+                                  value: 1,
+                                ),
+                                PopupMenuItem(
+                                  child: Text("Reminder"),
+                                  value: 2,
+                                ),
+                                PopupMenuItem(
+                                  child: Text("Share"),
+                                  value: 3,
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                       Text(
                         '\$' + rangeprice,
@@ -114,7 +118,7 @@ class ProductBox extends StatelessWidget {
                             Icons.shopping_basket,
                             size: 18,
                           ),
-                          Text(' Sold ' + sold,
+                          Text(' Sold  5' ,
                               style: TextStyle(
                                 fontSize: 12,
                               )),
@@ -149,10 +153,10 @@ class ProductBox extends StatelessWidget {
                                 child: Center(
                                     child: Text(
                                   'Update',
-                                  style: TextStyle(fontSize: 17),
+                                  style: TextStyle(fontSize: 12),
                                 )),
                                 height: 25,
-                                width: 85,
+                                width: 95,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(5),
                                   border: Border.all(
@@ -169,11 +173,11 @@ class ProductBox extends StatelessWidget {
                               },
                               child: Container(
                                 height: 25,
-                                width: 85,
+                                width: 95,
                                 child: Center(
                                     child: Text(
                                   'Delete',
-                                  style: TextStyle(fontSize: 17),
+                                  style: TextStyle(fontSize: 12),
                                 )),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(5),
