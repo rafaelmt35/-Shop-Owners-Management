@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:product_catalogue/menu/products.dart';
-import 'package:product_catalogue/productbox.dart';
+
 
 import 'const.dart';
 

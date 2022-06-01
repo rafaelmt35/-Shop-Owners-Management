@@ -144,7 +144,8 @@ class _MyProductsState extends State<MyProducts> {
                                       updateItem: () {
                                         products.doc(e.id).update({
                                           'Stocks':
-                                              (e.data() as dynamic)['Stocks'] + 1
+                                              (e.data() as dynamic)['Stocks'] +
+                                                  1
                                         });
                                       },
                                     ))

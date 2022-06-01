@@ -5,13 +5,11 @@ class ProductBox extends StatelessWidget {
   final String imagename;
   final String rangeprice;
   final String stockleft;
-  
 
   final Function updateItem;
   final Function deleteItem;
 
-  ProductBox(
-      this.desc, this.imagename, this.rangeprice, this.stockleft, 
+  ProductBox(this.desc, this.imagename, this.rangeprice, this.stockleft,
       {required this.deleteItem, required this.updateItem});
 
   @override
@@ -118,7 +116,7 @@ class ProductBox extends StatelessWidget {
                             Icons.shopping_basket,
                             size: 18,
                           ),
-                          Text(' Sold  5' ,
+                          Text(' Sold  5',
                               style: TextStyle(
                                 fontSize: 12,
                               )),

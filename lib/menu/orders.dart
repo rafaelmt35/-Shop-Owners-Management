@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:product_catalogue/menu/products.dart';
 
 import '../const.dart';
@@ -36,6 +37,12 @@ class _OrdersState extends State<Orders> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BuildNavbar(context),
+      body: SafeArea(
+        child: Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+        ),
+      ),
     );
   }
 
@@ -82,8 +89,7 @@ class _OrdersState extends State<Orders> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Icon(iconname,
-                color: pageIndex == index ? blue1 : Colors.black),
+            Icon(iconname, color: pageIndex == index ? blue1 : Colors.black),
             Text(
               menuname,
               style: TextStyle(
