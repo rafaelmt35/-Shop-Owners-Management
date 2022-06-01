@@ -1,4 +1,8 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:product_catalogue/databaseservice.dart';
 
 import 'package:product_catalogue/menu/products.dart';
 
@@ -33,6 +37,14 @@ class _OrdersState extends State<Orders> {
     MaterialPageRoute(builder: (_) => Else())
   ];
 
+  // late String imagepath = '';
+  // File? image;
+
+  // Future pickImage() async {
+  //   final image = await ImagePicker().pickImage(source: ImageSource.gallery);
+  //   if (image == null) return;
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,6 +53,32 @@ class _OrdersState extends State<Orders> {
         child: Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
+          // child: Column(
+          //   children: [
+          //     (imagepath != null)
+          //         ? Container(
+          //             width: 160,
+          //             height: 160,
+          //             decoration: BoxDecoration(
+          //                 image: DecorationImage(
+          //                     image: NetworkImage(imagepath),
+          //                     fit: BoxFit.cover)),
+          //           )
+          //         : Container(
+          //             width: 160,
+          //             height: 160,
+          //             color: Colors.red,
+          //           ),
+          //     ElevatedButton(
+          //       onPressed: () async {
+          //         File file = await pickImage();
+          //         imagepath = await DatabaseService.uploadImage(file);
+          //         setState(() {});
+          //       },
+          //       child: Text('Upload Image'),
+          //     )
+          //   ],
+          // ),
         ),
       ),
     );
